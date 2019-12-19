@@ -2,7 +2,8 @@ plan counting::counting (
 	TargetSpec	$targets
 ) {
 	run_task(
-		'counting::counting',
+		'counting::count',
+		'counting::until',
 		$targets,
 	)
 }
