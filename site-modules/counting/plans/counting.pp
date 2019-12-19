@@ -3,6 +3,9 @@ plan counting::counting (
 ) {
 	run_task(
 		'counting::count',
+		$targets,
+	)
+	run_task(
 		'counting::until',
 		$targets,
 	)
