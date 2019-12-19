@@ -1,0 +1,18 @@
+groups:
+  # - name: elastic_search
+  #   nodes:
+  #     - elasticsearch1.subdomain.mydomain.edu
+  #     - elasticsearch2.subdomain.mydomain.edu
+  #     - elasticsearch3.subdomain.mydomain.edu
+  # - name: web_app
+  #   nodes:
+  #     - web5.mydomain.edu
+  #     - web6.mydomain.edu
+  #     - web7.mydomain.edu
+  - name: test
+    nodes:
+      - agent2018.tspi.local
+      - testclone.tspi.local
+      - plans.tspi.local
+    #transport:
+    #  pcp
