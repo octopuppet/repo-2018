@@ -1,12 +1,12 @@
 plan counting::counting (
-	TargetSpec	$targets
+    TargetSpec  $targets,
 ) {
-	run_task(
-		'counting::count',
-		$targets,
-	)
-	run_task(
-		'counting::until',
-		$targets,
-	)
+    run_task(
+        'counting::count',
+        $targets,
+    )
+    run_task(
+        'counting::until',
+        $targets,
+    )
 }
