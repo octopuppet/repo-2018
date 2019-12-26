@@ -1,7 +1,7 @@
 # TargetSpec accepts a comma-separated list of targets
-plan exercise9::yesorno (TargetSpec $targets) {
-  # Run the 'exercise9::yesorno' task on the targets you specify.
-  $results = run_task('exercise9::yesorno', $targets)
+plan ex9::yesorno (TargetSpec $targets) {
+  # Run the 'ex9::yesorno' task on the targets you specify.
+  $results = run_task('ex9::yesorno', $targets)
 
   # Puppet uses immutable variables. That means we have to operate on data, in
   # this case a ResultSet containing a list of Results. Those are documented in
