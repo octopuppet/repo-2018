@@ -12,8 +12,8 @@ plan ex9::yesorno (TargetSpec $targets) {
 
   # Result objects also include a reference to the target they came from. Get a
   # list of the targets that answered 'true'.
-  $subset = $answered_true.map |$result| { $result.target }
+  #$subset = $answered_true.map |$result| { $result.target }
 
   # Run the 'uptime' command on the list of targets that answered 'true'.
-  return run_command('uptime', $subset)
+  return run_command('uptime', $answered_true)
 }
