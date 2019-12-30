@@ -1,4 +1,5 @@
-groups:
+---
+#groups:
   # - name: elastic_search
   #   nodes:
   #     - elasticsearch1.subdomain.mydomain.edu
@@ -9,10 +10,26 @@ groups:
   #     - web5.mydomain.edu
   #     - web6.mydomain.edu
   #     - web7.mydomain.edu
-  - name: test
-    nodes:
-      - agent2018.tspi.local
-      - testclone.tspi.local
-      - plans.tspi.local
+  #- name: test
+  #  nodes:
+  #    - agent2018.tspi.local
+  #    - testclone.tspi.local
+  #    - plans.tspi.local
     #transport:
     #  pcp
+
+version: 2
+groups:
+  - name: lb
+    targets:
+      - load.tspi.local
+  - name: db
+    targets:
+      - testclone.tspi.local
+  - name: app
+    targets:
+      - plans.tspi.local
+      - agent2018.tspi.local
+config:
+  transport:
+    pcp
