@@ -1,4 +1,4 @@
-class apache {
+class profile::apache {
     package { 'httpd':
         ensure => present,
         before => File['index.html'],
