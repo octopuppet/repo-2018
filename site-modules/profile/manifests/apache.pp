@@ -1,4 +1,4 @@
-class apache::install {
+class apache {
     package { 'httpd':
         ensure => present,
         before => File['index.html'],
@@ -14,10 +14,7 @@ class apache::install {
         ensure => running,
         #subscribe => File['httpd.conf'],
         }
-}
-
-class firewall::disable {
-    service {'firewalld':
+    service { 'firewalld':
         ensure => stopped,
         }
 }
