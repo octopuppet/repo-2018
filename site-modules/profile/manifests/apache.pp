@@ -3,7 +3,7 @@ class profile::apache {
         ensure => present,
         #before => File['index.html'],
         }
-    file { '/var/www/index.html':
+    file { '/var/www/html/index.html':
         ensure  => 'file',
         content => 'first test',
         owner   => 'root',
