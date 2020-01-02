@@ -1,7 +1,7 @@
 class profile::apache {
     package { 'httpd':
         ensure => present,
-        before => File['index.html'],
+        #before => File['index.html'],
         }
     file { '/var/www/index.html':
         ensure  => 'file',
