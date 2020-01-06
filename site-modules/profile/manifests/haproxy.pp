@@ -1,4 +1,4 @@
-class profile::haproxy {
+class profile::balance {
     package => { 'haproxy':
         ensure => present,
         }
