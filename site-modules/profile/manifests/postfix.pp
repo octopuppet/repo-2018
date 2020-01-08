@@ -1,4 +1,4 @@
-include postfix
+# include postfix
 
 class profile::postfix {
     postfix::config { 'relay_domains':
