@@ -6,6 +6,10 @@ forge 'https://forge.puppet.com'
 mod 'puppetlabs-stdlib', '6.2.0'
 mod 'puppetlabs-concat', '6.1.0'
 mod 'puppetlabs-haproxy', '4.2.0'
+mod 'camptocamp-postfix', '1.9.0'
+mod 'camptocamp-augeas', '1.8.0'
+mod 'puppet-alternatives', '3.0.0'
+mod 'puppetlabs-mailalias_core', '1.0.5'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
